@@ -1,0 +1,134 @@
+@use '../Variables' as *;
+
+.skeleton-card {
+  background: $color-white;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.skeleton-card__image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(
+    90deg,
+    $color-gray-light 0%,
+    $color-gray 50%,
+    $color-gray-light 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 220px;
+  }
+}
+
+.skeleton-card__content {
+  padding: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  flex: 1;
+}
+
+.skeleton-card__title {
+  height: 24px;
+  background: linear-gradient(
+    90deg,
+    $color-gray-light 0%,
+    $color-gray 50%,
+    $color-gray-light 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: $border-radius-sm;
+  width: 70%;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 28px;
+  }
+}
+
+.skeleton-card__rating {
+  height: 20px;
+  background: linear-gradient(
+    90deg,
+    $color-gray-light 0%,
+    $color-gray 50%,
+    $color-gray-light 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: $border-radius-sm;
+  width: 40%;
+  animation-delay: 0.1s;
+}
+
+.skeleton-card__description {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+  flex: 1;
+}
+
+.skeleton-card__line {
+  height: 16px;
+  background: linear-gradient(
+    90deg,
+    $color-gray-light 0%,
+    $color-gray 50%,
+    $color-gray-light 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: $border-radius-sm;
+  width: 100%;
+
+  &:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  &--short {
+    width: 60%;
+  }
+}
+
+.skeleton-card__button {
+  height: 40px;
+  background: linear-gradient(
+    90deg,
+    $color-gray-light 0%,
+    $color-gray 50%,
+    $color-gray-light 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: $border-radius-sm;
+  width: 100%;
+  margin-top: auto;
+  animation-delay: 0.5s;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
