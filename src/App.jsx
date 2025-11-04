@@ -7,7 +7,7 @@ import Pagination from './components/Pagination';
 
 const ITEMS_PER_PAGE = 6;
 
-const useDebounce = (value, delay = 500) => {
+const useDebounce = (value, delay = 100) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
   useEffect(() => {
