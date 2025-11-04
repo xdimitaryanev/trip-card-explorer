@@ -7,7 +7,7 @@ import Pagination from './components/Pagination';
 
 const ITEMS_PER_PAGE = 6;
 
-const useDebounce = (value, delay = 100) => {
+const useDebounce = (value, delay = 300) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
   useEffect(() => {
@@ -48,7 +48,6 @@ function App() {
 
         const data = await response.json();
 
-        // Validate data structure
         if (!data.trips || !Array.isArray(data.trips)) {
           throw new Error('Invalid data format: trips array not found');
         }
