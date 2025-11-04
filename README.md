@@ -34,6 +34,6 @@ A clean and simple React app to browse travel destinations. Search, sort, and ex
 ✅ Real-time search  
 ✅ Sort by rating  
 ✅ Responsive design  
-✅ Accessible
-✅ Pagination
-✅ Image lazy loading
+✅ Accessible  
+✅ Pagination  
+✅ Image lazy loading  
