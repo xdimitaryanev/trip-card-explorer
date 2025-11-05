@@ -20,7 +20,7 @@ A clean and simple React app to browse travel destinations. Search, sort, and ex
    npm run dev
    ```
 
-**Live site:** [trip-card-explorer.vercel.app](trip-card-explorer-pearl.vercel.app)
+**Live site:** https://trip-card-explorer-pearl.vercel.app/
 
 ## Technologies
 
